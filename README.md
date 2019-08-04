@@ -6,7 +6,7 @@ A C# desktop application that reads JSON files and then displays data on a graph
 * How to create XAML graphical user interfaces
 * How to deserialize JSON files
 * How to bind user interface and business logic
-* How to create a open file dialog obj
+* How to use a open file dialog object
 
 # Notice
 This application uses a separate Dynamic Link Library. See CountryDynamicLinkLibrary repository to run this application appropriately.
