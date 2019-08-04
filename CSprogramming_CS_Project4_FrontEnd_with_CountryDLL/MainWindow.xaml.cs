@@ -133,27 +133,28 @@ namespace CSprogramming_CS_Project4_FrontEnd_with_CountryDLL
 
             // DeserializeJSON
 
-            // Put the filename in a string
+            // Put the name of the file that was open into a string type variable
             string filename = openFileDialog.FileName;
 
-            // Create new Filstream Object to help read from file
+            // Construct a filestream obj with the filename, open the file, and give obj read access
             FileStream readFILE = new FileStream(filename, FileMode.Open, FileAccess.Read);
 
-            // Read as UTF-8 from file into string
+            // Construct a streamreader obj with the filestream obj and encode with UTF-8
             StreamReader streamReader = new StreamReader(readFILE, Encoding.UTF8);
+            
+            // Initialize a string variable with data in streamReader
             string jsonString = streamReader.ReadToEnd();
 
-            // Once the data is in the JSON string then put it in a MemoryStream
+            // Initialize byte variable with encoding abstract data type method, use string with json data as parameter
             byte[] byteArray = Encoding.UTF8.GetBytes(jsonString);
+            
+            // Construct a memorystream obj with byteArray variable
             MemoryStream stream = new MemoryStream(byteArray);
 
-
-            // Store Data In List
-
-            // Create new DCJS Object to help read json data
+            // Construct a DCJS Object with List<Country> obj
             DataContractJsonSerializer serListOfCountryData = new DataContractJsonSerializer(typeof(List<Country>));
 
-            // Store data to List
+            // Initialize ListOfCoutries with DataConstractJsonSerialize read object method
             ListOfCountries = (List<Country>)serListOfCountryData.ReadObject(stream);
 
             readFILE.Close();
