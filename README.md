@@ -8,5 +8,8 @@ A C# desktop application that read a country data JSON file and then displays a 
 * How to bind user interface and business logic
 * How to use a open file dialog object
 
+# Images and Description
+This application uses a Country Dynamic Link Library to help store country data to the CPUs RAM. The country Dynamic Link Library is in a seperate respository. I created this application in Visual Studios 2017 using C# and XAML.
+
 # Notice
 This application uses a separate Dynamic Link Library. See CountryDynamicLinkLibrary repository to run this application appropriately.
