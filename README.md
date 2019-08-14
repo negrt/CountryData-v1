@@ -1,5 +1,5 @@
 # CountryDataSearchTool-v1
-A C# desktop application that reads a country data JSON file and could then displays a target country data on its graphical user interface.
+A C# desktop application that reads a country data JSON file and could then display a target country data on its graphical user interface.
 
 # What I learned
 * How to store C# objects on a list using C# generics
