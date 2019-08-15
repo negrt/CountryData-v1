@@ -9,7 +9,7 @@ A C# desktop application that reads a country data JSON file and could then disp
 * How to use a open file dialog object
 
 # Images and Description
-The application reads country dataset JSON file, stores it into ram using a List of countries. The applicaiton then has the ability to search through the List of countries object for a Target Country application uses a Country Dynamic Link Library to help store country data to the CPUs RAM. When the country target is found, information related to the country will be displayed on the interface. The country Dynamic Link Library is in a seperate respository. I created this application in Visual Studios 2017 using C# and XAML.
+The application reads country dataset JSON file, stores it into memory using a List of countries. The applicaiton then has the ability to search through the List of countries object for a target Country. Application uses a Country Dynamic Link Library to for defined country object. When the country target is found, information related to the country will be displayed on the interface. The country Dynamic Link Library is in a seperate respository.
 
 ## Images
 #### Application on Start Up
