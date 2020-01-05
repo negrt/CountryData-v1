@@ -1,4 +1,4 @@
-# CountryData-v1
+# CountryDatabase-v1
 A C# desktop application that reads a country data JSON file and could then display a target country data on its graphical user interface.
 
 # What I learned
